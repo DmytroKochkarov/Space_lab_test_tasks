@@ -15,15 +15,15 @@ def Triangle(kot):
 kot = []
 for i in range(3):
     while True:
-        g = input(f"Введіть три числа для визначення Піфагоровської трійки: ")
+        g = input(f"Enter numbers: ")
         try:
             g = int(g)
             if g > 0:
                 kot.append(g)
                 break
             else:
-                logging.warning(f"Введіть число !")
+                logging.warning(f"Numbers !")
         except ValueError or NameError:
-            logging.warning(f"Введіть додатнє число, не букви !!!")
+            logging.warning(f"Not letters !!!")
 
 print(Triangle(kot))
